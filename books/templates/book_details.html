@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        .book-details {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #333;
+        }
+        .book-meta {
+            margin-top: 10px;
+            color: #555;
+        }
+        .back-link {
+            margin-top: 20px;
+            display: inline-block;
+            text-decoration: none;
+            color: #007BFF;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="book-details">
+        <h1>{{ book.title }}</h1>
+        <p class="book-meta"><strong>Author:</strong> {{ book.author }}</p>
+        <p class="book-meta"><strong>Published:</strong> {{ book.published_date }}</p>
+        <p class="book-meta"><strong>Description:</strong></p>
+        <p>{{ book.description }}</p>
+
+        <a href="/" class="back-link">&larr; Back to Home</a>
+    </div>
+</body>
+</html>
